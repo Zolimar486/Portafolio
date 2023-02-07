@@ -13,14 +13,11 @@ max-width:900px;
 
 
 @media only screen and (max-width:768px){
-    margin: 10px 80px;
+    margin: 10px 50px;
     
 }
 
-@media only screen and (max-width:568px){
-    margin:5px 60px;
-    overflow:hidden;
-}
+
 `
         
 const Wrapper= styled.div`
@@ -34,6 +31,7 @@ margin-left:-23px;
     margin:10px 0px;
     align-items:center;
     justify-content:center;
+    
 }
 
 
@@ -58,7 +56,7 @@ margin:0px 30px;
 
  @media  only screen and (max-width:768px){
     margin-bottom:10px;
-    width:70%;
+    width:90%;
  }
 
 `

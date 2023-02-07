@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import travel  from '../Assets/Travel.png'
 import blog from '../Assets/Blog.png'
 import ecommerce from '../Assets/Ecommerce.png'
-
+import './works.css'
 
 
 
@@ -13,17 +13,14 @@ display:flex;
 padding:10px;
 
 @media only screen and (max-width:768px){
-    margin:10px 90px;
+    margin:10px 50px;
     display:flex;
     align-items:center;
     justify-content:center;
     flex-direction:column;
 }
 
-@media only screen and (max-width:568px){
-    margin:5px 40px;
-    overflow:hidden;
-}
+
 
 `
 const Text= styled.h2`
@@ -58,7 +55,7 @@ padding:20px;
 
 @media only screen and (max-width:768px){
     margin-bottom:10px;
-    width:70%;
+    width:90%;
     
 }
 `
