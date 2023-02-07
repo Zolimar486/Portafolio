@@ -205,7 +205,7 @@ export default function Form(){
      e.preventDefault()
      
      try{
-        const res= await axios.post('http://localhost:5000/send', {
+        const res= await axios.post('https://portafolio-server.onrender.com/send', {
             name,
             email,
             text
