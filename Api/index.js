@@ -29,6 +29,9 @@ transporter.verify((err, success) => {
   :console.log(`==== Server is ready to take messages ${success} ===`)
 });
 
+app.get('/', async(req,res) => {
+  res.status(200).json({message: "New Request"})
+})
  
 
  app.post('/send',function (req,res) {
