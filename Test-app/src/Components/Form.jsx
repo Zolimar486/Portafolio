@@ -15,15 +15,15 @@ padding-bottom:20px;
 padding:0px 10px;
 
 
+
 @media only screen and (max-width:768px){
 
-    margin:10px 80px;
+    margin:10px 50px;
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
-   
-    
+    jsutify-content:center;
+
 
 }
 `
@@ -37,8 +37,13 @@ flex-direction:column;
 width:45%;
 
 @media only screen and (max-width:768px){
-    width:300px;
+    width:90%;
 }
+
+@media only screen and ( max-width:500px){
+    with:300px;
+}
+
 
 `
 const Section= styled.div`
@@ -74,7 +79,7 @@ margin-bottom:10px 0px;
 font-size:17px;
 
 @media only screen and (max-width:768px){
-    font-size:15px;
+    font-size:16px;
 
 }
 `
@@ -101,8 +106,13 @@ padding: 0px 20px;
 height:80vh;
 
 @media only screen and (max-width:768px){
-    width:300px;
+    width:90%;
 }
+
+@media only screen and ( max-width:500px){
+    with:300px;
+}
+
 `
 
 const FormData= styled.form`
@@ -168,6 +178,12 @@ height:30px;
 background-color:#333;
 padding:3px;
 margin-top:10px;
+
+@media only screen and ( max-width:768px){
+    height:50px;
+    padding:5px;
+}
+
 `
 
 const Msg = styled.span`
