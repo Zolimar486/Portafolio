@@ -57,7 +57,7 @@ export default function Header(){
     return(
         <Container>
            <Wrapper>
-            <Title>Web Deveploment and Websites Promotions </Title>
+            <Title>Web Development and Websites Promotions </Title>
                 <Typed
                  strings = {["Web Desing", "Web Development"]}
                  style={{color:" white", fontSize:"20px", margin:"10px 0px" }}
