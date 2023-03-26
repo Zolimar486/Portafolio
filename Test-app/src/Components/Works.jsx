@@ -134,7 +134,7 @@ export default function Works(){
             <Wrapper>
                 <Image src={ecommerce}/>
                 <Info>
-                    <Title> E-commerce Site</Title>
+                    <Title> E-commerce </Title>
                     <Button><Tag href="https://ecommerce-site-u4ue.onrender.com" target="_blank">Check it out</Tag></Button>
                 </Info>
             </Wrapper>
