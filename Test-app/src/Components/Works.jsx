@@ -121,7 +121,7 @@ export default function Works(){
                 <Image src={blog}/>
                 <Info>
                     <Title> Blog Project</Title>
-                    <Button><Tag href="https://snazzy-otter-b15bd8.netlify.app/" target="_blank" >Check it out</Tag></Button>
+                    <Button><Tag href="https://astonishing-klepon-37613f.netlify.app/" target="_blank" >Check it out</Tag></Button>
                 </Info>
             </Wrapper>
             <Wrapper>
