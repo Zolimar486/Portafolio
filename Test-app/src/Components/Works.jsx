@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import travel  from '../Assets/Travel.png'
-import blog from '../Assets/Blog.png'
+import blog from '../Assets/New.png'
 import ecommerce from '../Assets/Ecommerce.png'
 import './works.css'
 

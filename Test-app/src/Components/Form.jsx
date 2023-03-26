@@ -16,9 +16,11 @@ padding:0px 10px;
 
 
 
+
 @media only screen and (max-width:768px){
 
-    margin:10px 50px;
+    margin:10px auto;
+    
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -37,11 +39,11 @@ flex-direction:column;
 width:45%;
 
 @media only screen and (max-width:768px){
-    width:90%;
+   width:90%;
 }
 
 @media only screen and ( max-width:500px){
-    with:300px;
+   width:400px;
 }
 
 
@@ -149,7 +151,7 @@ outline:none;
 
 const TextArea= styled.textarea`
 border:1px solid gray;
-padding:5px;
+padding:10px;
 border-radius:5px;
 font-family:'Varela', sans-serif;
 font-size:15px;
@@ -217,23 +219,34 @@ export default function Form(){
     validateText({text, setTextError})
    },[name, email,text])
 
-   const handleSubmit= async(e) => {
+   const handleSubmit= (e) => {
      e.preventDefault()
      
-     try{
-        const res= await axios.post('https://portafolio-server.onrender.com/send', {
-            name,
-            email,
-            text
-        })
+     const postData= async()=> {
+        try{
+            const res= await axios.post('https://portafolio-server.onrender.com/send', {
+                name,
+                email,
+                text
+            })
+    
+            res.data && data()
+    
+            setSuccess(true)
+         }catch(err){}
+         
+     }
 
-        res.data && data()
+     const timer = setTimeout(()=> {
+        postData()
+     },200)
 
-        setSuccess(true)
-     }catch(err){}
-     
+     return ()=> clearTimeout(timer)
+    
      
    }
+
+   
 
    
 
