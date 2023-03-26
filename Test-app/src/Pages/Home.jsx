@@ -16,6 +16,7 @@ const Wrapper = styled.div`
 position:relative;
 z-index: 99999;
 background-color:white;
+overflow:hidden;
 `
 
 export default function Home(){

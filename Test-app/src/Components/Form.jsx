@@ -19,14 +19,18 @@ padding:0px 10px;
 
 @media only screen and (max-width:768px){
 
-    margin:10px auto;
-    
+    margin:10px 50px;
+    width:90%;
     display:flex;
     flex-direction:column;
     align-items:center;
     jsutify-content:center;
 
 
+}
+
+@media only screen and (max-width:500px){
+    width:70%;
 }
 `
 
@@ -39,11 +43,12 @@ flex-direction:column;
 width:45%;
 
 @media only screen and (max-width:768px){
-   width:90%;
+   width:100%;
+   height:40vh;
 }
 
 @media only screen and ( max-width:500px){
-   width:400px;
+   width:330px;
 }
 
 
@@ -81,6 +86,11 @@ margin-bottom:10px 0px;
 font-size:17px;
 
 @media only screen and (max-width:768px){
+    font-size:19px;
+
+}
+
+@media only screen and (max-width:500px){
     font-size:16px;
 
 }
@@ -112,7 +122,7 @@ height:80vh;
 }
 
 @media only screen and ( max-width:500px){
-    with:300px;
+    width:320px;
 }
 
 `
@@ -259,15 +269,15 @@ export default function Form(){
                 </Div>
                 <List>
                     <ListItems>
-                        <FiMapPin style={{margin:"0px 3px", fontSize:"17px"}}/>
-                        <Text>Juan Domingo Peron 2618 Buenos Aires</Text>
+                        <FiMapPin style={{margin:"0px 5px", fontSize:"17px"}}/>
+                        <Text>Peron 2618 Buenos Aires</Text>
                     </ListItems>
                     <ListItems>
-                        <BiPhone style={{margin:"0px 3px", fontSize:"17px"}}/>
+                        <BiPhone style={{margin:"0px 5px", fontSize:"17px"}}/>
                         <Text>+ 54 1132625748</Text>
                     </ListItems>
                     <ListItems>
-                        <HiOutlineMail style={{margin:"0px 3px", fontSize:"17px"}}/>
+                        <HiOutlineMail style={{margin:"0px 5px", fontSize:"17px"}}/>
                         <Text>ing.carrasquero.zolimar@gmail.com</Text>
                     </ListItems>
                 </List>
