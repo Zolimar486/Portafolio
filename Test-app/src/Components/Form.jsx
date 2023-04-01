@@ -249,7 +249,7 @@ export default function Form(){
 
      const timer = setTimeout(()=> {
         postData()
-     },200)
+     },10)
 
      return ()=> clearTimeout(timer)
     

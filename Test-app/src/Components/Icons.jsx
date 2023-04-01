@@ -29,15 +29,20 @@ height:2.5rem;
 
 `
 
+const Tag = styled.a``
+
+
 
 export default function Icons(){
     return(
         <Container>
             <Icon>
-                <Image src={git}/>
+                <Tag  href="https://github.com/Zolimar486?tab=repositories" target ="_blank"><Image src={git} /></Tag>
+                
+                
             </Icon>
             <Icon>
-                <Image src={link}/>
+            <Tag  href=" https://www.linkedin.com/in/zolimarcarrasquero/" target ="_blank"><Image src={link} /></Tag>
             </Icon>
             <Icon>
                 <Image src={gmail}/>
