@@ -2,6 +2,10 @@ import styled from 'styled-components'
 import travel  from '../Assets/Travel.png'
 import blog from '../Assets/New.png'
 import ecommerce from '../Assets/Ecommerce.png'
+import tasks from '../Assets/tasks.png'
+import project from '../Assets/project.png'
+import site from '../Assets/site.png'
+
 import './works.css'
 
 
@@ -9,7 +13,9 @@ import './works.css'
 const Container = styled.div`
 margin:10px auto;
 max-width:900px;
-display:flex;
+display:grid;
+grid-template-columns:repeat(3, 1fr);
+gap:8px;
 padding:10px;
 
 @media only screen and (max-width:768px){
@@ -64,7 +70,7 @@ padding:20px;
 const Image = styled.img`
 width:80%;
 height:70%;
-object-fit:cover;
+
 border-radius:10px;
 
 `
@@ -121,7 +127,7 @@ export default function Works(){
                 <Image src={blog}/>
                 <Info>
                     <Title> Blog Project</Title>
-                    <Button><Tag href="https://petroleum-blog.netlify.app/" target="_blank" >Check it out</Tag></Button>
+                    <Button><Tag href="https://oil-blog.netlify.app/" target="_blank" >Check it out</Tag></Button>
                 </Info>
             </Wrapper>
             <Wrapper>
@@ -136,6 +142,31 @@ export default function Works(){
                 <Info>
                     <Title> E-commerce </Title>
                     <Button><Tag href="https://ecommerce-site-u4ue.onrender.com" target="_blank">Check it out</Tag></Button>
+                </Info>
+            </Wrapper>
+            
+            <Wrapper>
+            
+                <Image src={project}/>
+                <Info>
+                    <Title> Nike Site</Title>
+                    <Button><Tag href="https://digitalfirstlanding.com/" target="_blank" >Check it out</Tag></Button>
+                </Info>
+            </Wrapper>
+            <Wrapper>
+            
+                <Image src={tasks}/>
+                <Info>
+                    <Title> Task Project</Title>
+                    <Button><Tag href="https://task-management-seven-nu.vercel.app/" target="_blank" >Check it out</Tag></Button>
+                </Info>
+            </Wrapper>
+            <Wrapper>
+            
+                <Image src={site}/>
+                <Info>
+                    <Title> School Site</Title>
+                    <Button><Tag href="https://site-project.netlify.app/" target="_blank" >Check it out</Tag></Button>
                 </Info>
             </Wrapper>
         </Container>
